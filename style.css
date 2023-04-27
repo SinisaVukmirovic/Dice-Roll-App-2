@@ -8,6 +8,7 @@ body {
 }
 
 .dice {
+    background-color: firebrick;
     width: 5rem;
     height: 5rem;
     position: relative;
@@ -22,8 +23,8 @@ body {
 
     background-color: #000;
     border-radius: 100%;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.1rem;
+    height: 1.1rem;
 
     position: absolute;
     left: var(--left);
