@@ -91,3 +91,9 @@ btnRollDice.addEventListener('click', () => {
         clearInterval(interval);
     }, 1000);
 });
+
+// range indicator
+document.querySelector('input[type=range]').addEventListener('input', function rangeChange() {
+	// trigger the CSS to update
+	this.setAttribute('value', this.value);
+});

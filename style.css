@@ -24,6 +24,22 @@ body {
     /* margin: 2rem; */
 }
 
+input[type="range"] {
+    position: relative;
+}
+
+input[type="range"]:before {
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    margin-left: -10px;
+    content: attr(value);
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 10px;
+}
+
 .dice {
     background-color: firebrick;
     width: 5rem;
