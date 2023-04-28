@@ -1,15 +1,27 @@
 body {
     background-color: #ccc;
+    display: grid;
+    place-items: center;
 }
 
 .dice-container {
     width: 20rem;
     height: 20rem;
-    margin: 3rem;
     display: grid;
-    place-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    border: 2px solid crimson;
+    border-radius: 1.5rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    margin-top: 3rem;
+    /* margin: 2rem; */
 }
 
 .dice {
@@ -17,7 +29,6 @@ body {
     width: 5rem;
     height: 5rem;
     position: relative;
-    margin-right: .5rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
 }
@@ -39,6 +50,5 @@ body {
 }
 
 .btn-roll-dice {
-    margin-left: 3rem;
     cursor: pointer;
 }
