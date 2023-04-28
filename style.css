@@ -3,8 +3,13 @@ body {
 }
 
 .dice-container {
-    display: flex;
+    width: 20rem;
+    height: 20rem;
     margin: 3rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .dice {
