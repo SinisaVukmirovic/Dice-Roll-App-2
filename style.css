@@ -45,6 +45,7 @@ body {
 .controls {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 2rem;
     gap: 2rem;
     margin-top: 3rem;
@@ -52,6 +53,11 @@ body {
 
 input[type="range"] {
     position: relative;
+}
+
+label {
+    display: block;
+    margin: -1.5rem auto 0;
 }
 
 input[type="range"]:before {
@@ -62,10 +68,12 @@ input[type="range"]:before {
     content: attr(value);
     display: block;
     text-align: center;
-    width: 20px;
-    height: 10px;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .btn-roll-dice {
     cursor: pointer;
+    margin-top: 2rem;
 }
