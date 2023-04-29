@@ -7,40 +7,17 @@ body {
 .dice-container {
     width: 20rem;
     height: 20rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* align-items: center; */
     border: 2px solid crimson;
     border-radius: 1.5rem;
 }
 
-.controls {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    gap: 2rem;
-    margin-top: 3rem;
-    /* margin: 2rem; */
-}
-
-input[type="range"] {
-    position: relative;
-}
-
-input[type="range"]:before {
-    position: absolute;
-    top: -17px;
-    left: 50%;
-    margin-left: -10px;
-    content: attr(value);
-    display: block;
-    text-align: center;
-    width: 20px;
-    height: 10px;
-}
-
 .dice {
+    margin: .5rem;
     background-color: firebrick;
     width: 5rem;
     height: 5rem;
@@ -63,6 +40,30 @@ input[type="range"]:before {
     top: var(--top);
     /* transform: translateX(calc(var(--left) * -1)) translateY(calc(var(--top) * -1)); */
     transform: translateX(-50%) translateY(-50%);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+input[type="range"] {
+    position: relative;
+}
+
+input[type="range"]:before {
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    margin-left: -10px;
+    content: attr(value);
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 10px;
 }
 
 .btn-roll-dice {

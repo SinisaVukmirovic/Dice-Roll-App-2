@@ -66,7 +66,7 @@ const randomizeDice = (diceContainer, numberOfDice) => {
     }
 }
 
-// const NUMBER_OF_DICE = null;
+let NUMBER_OF_DICE = 6;
 const rangeNumberOfDice = document.querySelector('#number-of-dice');
 // const NUMBER_OF_DICE = rangeNumberOfDice.value;
 // console.log(NUMBER_OF_DICE);
@@ -80,11 +80,11 @@ const btnRollDice = document.querySelector('.btn-roll-dice');
 randomizeDice(diceContainer, rangeNumberOfDice.value);
 
 btnRollDice.addEventListener('click', () => {
-	// NUMBER_OF_DICE == rangeNumberOfDice.value;
+	NUMBER_OF_DICE = rangeNumberOfDice.value;
 	// console.log(NUMBER_OF_DICE);
 
     const interval = setInterval(() => {
-        randomizeDice(diceContainer, rangeNumberOfDice.value);
+        randomizeDice(diceContainer, NUMBER_OF_DICE);
     }, 50);
 
     setTimeout(() => {
