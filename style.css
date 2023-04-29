@@ -62,18 +62,24 @@ label {
 
 input[type="range"]:before {
     position: absolute;
-    top: -17px;
+    top: -3rem;
     left: 50%;
-    margin-left: -10px;
+    transform: translateX(-50%);
     content: attr(value);
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    width: 2rem;
-    height: 2rem;
+    /* display: block;
+    text-align: center; */
+    font-size: 2.5rem;
+    /* width: 2rem;
+    height: 2rem; */
 }
 
 .btn-roll-dice {
     cursor: pointer;
     margin-top: 2rem;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 10rem;
 }
