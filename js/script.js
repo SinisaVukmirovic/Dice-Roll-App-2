@@ -1,39 +1,43 @@
+import { dotPositionMatrix } from './dotPositionMatrix.js';
+import './rangeIndicator.js';
+// import { randomizeDice } from './randomizeDice.js';
+
 const createDice = (number) => {
-    const dotPositionMatrix = {
-        1: [
-			[50, 50]
-		],
-		2: [
-			[20, 20],
-			[80, 80]
-		],
-		3: [
-			[20, 20],
-			[50, 50],
-			[80, 80]
-		],
-		4: [
-			[20, 20],
-			[20, 80],
-			[80, 20],
-			[80, 80]
-		],
-		5: [
-			[20, 20],
-			[20, 80],
-			[50, 50],
-			[80, 20],
-			[80, 80]
-		],
-		6: [
-			[20, 20],
-			[20, 80],
-			[50, 20],
-			[50, 80],
-			[80, 20],
-			[80, 80]
-		]
-    }
+    // const dotPositionMatrix = {
+    //     1: [
+	// 		[50, 50]
+	// 	],
+	// 	2: [
+	// 		[20, 20],
+	// 		[80, 80]
+	// 	],
+	// 	3: [
+	// 		[20, 20],
+	// 		[50, 50],
+	// 		[80, 80]
+	// 	],
+	// 	4: [
+	// 		[20, 20],
+	// 		[20, 80],
+	// 		[80, 20],
+	// 		[80, 80]
+	// 	],
+	// 	5: [
+	// 		[20, 20],
+	// 		[20, 80],
+	// 		[50, 50],
+	// 		[80, 20],
+	// 		[80, 80]
+	// 	],
+	// 	6: [
+	// 		[20, 20],
+	// 		[20, 80],
+	// 		[50, 20],
+	// 		[50, 80],
+	// 		[80, 20],
+	// 		[80, 80]
+	// 	]
+    // }
 
     const dice = document.createElement('div');
     dice.classList.add('dice');
@@ -77,7 +81,7 @@ const btnRollDice = document.querySelector('.btn-roll-dice');
 // diceContainer.appendChild(createDice(3));
 // console.log(createDice(3))
 
-randomizeDice(diceContainer, rangeNumberOfDice.value);
+randomizeDice(diceContainer, NUMBER_OF_DICE);
 
 btnRollDice.addEventListener('click', () => {
 	NUMBER_OF_DICE = rangeNumberOfDice.value;
@@ -92,8 +96,8 @@ btnRollDice.addEventListener('click', () => {
     }, 1000);
 });
 
-// range indicator
-document.querySelector('input[type=range]').addEventListener('input', function rangeChange() {
-	// trigger the CSS to update
-	this.setAttribute('value', this.value);
-});
+// // range indicator
+// document.querySelector('input[type=range]').addEventListener('input', function rangeChange() {
+// 	// trigger the CSS to update
+// 	this.setAttribute('value', this.value);
+// });
