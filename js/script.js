@@ -1,3 +1,4 @@
+import { rangeNumberOfDice, diceContainer, btnRollDice } from './DOMelements.js';
 import { dotPositionMatrix } from './dotPositionMatrix.js';
 import './rangeIndicator.js';
 // import { randomizeDice } from './randomizeDice.js';
@@ -71,11 +72,11 @@ const randomizeDice = (diceContainer, numberOfDice) => {
 }
 
 let NUMBER_OF_DICE = 6;
-const rangeNumberOfDice = document.querySelector('#number-of-dice');
+// const rangeNumberOfDice = document.querySelector('#number-of-dice');
 // const NUMBER_OF_DICE = rangeNumberOfDice.value;
 // console.log(NUMBER_OF_DICE);
-const diceContainer = document.querySelector('.dice-container');
-const btnRollDice = document.querySelector('.btn-roll-dice');
+// const diceContainer = document.querySelector('.dice-container');
+// const btnRollDice = document.querySelector('.btn-roll-dice');
 
 // diceContainer.appendChild(createDice(5));
 // diceContainer.appendChild(createDice(3));
