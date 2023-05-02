@@ -2,13 +2,17 @@
 
 :root {
     --bg-clr: linear-gradient(90deg, #232323, #0c6147, #0c6147, #232323);
+    --theme-clr: #fee96c;
+    --dice-clr: #fe0d0b;
+    --text-font: 'Gruppo', cursive;
 }
 
 body {
     background: var(--bg-clr);
     display: grid;
     place-items: center;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
+    font-family: var(--text-font);
 }
 
 
@@ -60,5 +64,9 @@ body {
 @media (max-width: 700px) {
     html {
         font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 4rem;
     }
 }
