@@ -64,7 +64,7 @@ header h1 {
     appearance: none;
 }
 
-label {
+label#label-number-of-dice {
     display: block;
     margin: -1.5rem auto 0;
     color: var(--theme-clr);
@@ -73,13 +73,13 @@ label {
 
 #number-of-dice:before {
     position: absolute;
-    top: -3.5rem;
+    top: -4rem;
     left: 50%;
     transform: translateX(-50%);
     content: attr(value);
     /* display: block;
     text-align: center; */
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--theme-clr);
     font-family: var(--text-font);
     /* width: 2rem;
@@ -109,4 +109,20 @@ label {
     color: #fff;
     font-family: inherit;
     font-size: 2rem;
+    transition: scale 250ms;
+}
+
+.btn-roll-dice:hover {
+    outline: 2px solid var(--theme-clr);
+}
+.btn-roll-dice:focus {
+    outline: 2px solid var(--theme-clr);
+}
+
+.btn-roll-dice:active {
+    scale: .98;
+}
+
+input#number-of-dice:focus {
+    outline: 2px solid var(--dice-clr);
 }
