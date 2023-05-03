@@ -1,6 +1,8 @@
+export { randomizeDice };
+
+import './rangeIndicator.js';
 import { rangeNumberOfDice, diceContainer, btnRollDice } from './DOMelements.js';
 import { dotPositionMatrix } from './dotPositionMatrix.js';
-import './rangeIndicator.js';
 // import { randomizeDice } from './randomizeDice.js';
 
 const createDice = (number) => {
