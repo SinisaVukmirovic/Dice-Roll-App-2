@@ -70,3 +70,13 @@ body {
         font-size: 4rem;
     }
 }
+
+@media (max-width: 700px) {
+    html {
+        font-size: 12px;
+    }
+
+    /* header h1 {
+        font-size: 4rem;
+    } */
+}

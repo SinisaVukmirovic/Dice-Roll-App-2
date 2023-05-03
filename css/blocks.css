@@ -113,7 +113,7 @@ label#label-number-of-dice {
 }
 
 .btn-roll-dice:hover {
-    outline: 2px solid var(--theme-clr);
+    filter: brightness(1.5);
 }
 .btn-roll-dice:focus {
     outline: 2px solid var(--theme-clr);
@@ -124,5 +124,6 @@ label#label-number-of-dice {
 }
 
 input#number-of-dice:focus {
+    outline-offset: 2px;
     outline: 2px solid var(--dice-clr);
 }
