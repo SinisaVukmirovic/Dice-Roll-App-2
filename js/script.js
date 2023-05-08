@@ -3,45 +3,8 @@ export { randomizeDice };
 import './rangeIndicator.js';
 import { rangeNumberOfDice, diceContainer, btnRollDice } from './DOMelements.js';
 import { dotPositionMatrix } from './dotPositionMatrix.js';
-// import { randomizeDice } from './randomizeDice.js';
 
 const createDice = (number) => {
-    // const dotPositionMatrix = {
-    //     1: [
-	// 		[50, 50]
-	// 	],
-	// 	2: [
-	// 		[20, 20],
-	// 		[80, 80]
-	// 	],
-	// 	3: [
-	// 		[20, 20],
-	// 		[50, 50],
-	// 		[80, 80]
-	// 	],
-	// 	4: [
-	// 		[20, 20],
-	// 		[20, 80],
-	// 		[80, 20],
-	// 		[80, 80]
-	// 	],
-	// 	5: [
-	// 		[20, 20],
-	// 		[20, 80],
-	// 		[50, 50],
-	// 		[80, 20],
-	// 		[80, 80]
-	// 	],
-	// 	6: [
-	// 		[20, 20],
-	// 		[20, 80],
-	// 		[50, 20],
-	// 		[50, 80],
-	// 		[80, 20],
-	// 		[80, 80]
-	// 	]
-    // }
-
     const dice = document.createElement('div');
     dice.classList.add('dice');
 
@@ -51,7 +14,6 @@ const createDice = (number) => {
 
         // dot.style.setProperty('--top', ${dotPosition[0]%});
         // dot.style.setProperty('--left', ${dotPosition[1]%});
-        
         dot.style.setProperty('--top', dotPosition[0] + '%');
         dot.style.setProperty('--left', dotPosition[1] + '%');
 
@@ -74,21 +36,11 @@ const randomizeDice = (diceContainer, numberOfDice) => {
 }
 
 let NUMBER_OF_DICE = 6;
-// const rangeNumberOfDice = document.querySelector('#number-of-dice');
-// const NUMBER_OF_DICE = rangeNumberOfDice.value;
-// console.log(NUMBER_OF_DICE);
-// const diceContainer = document.querySelector('.dice-container');
-// const btnRollDice = document.querySelector('.btn-roll-dice');
-
-// diceContainer.appendChild(createDice(5));
-// diceContainer.appendChild(createDice(3));
-// console.log(createDice(3))
 
 randomizeDice(diceContainer, NUMBER_OF_DICE);
 
 btnRollDice.addEventListener('click', () => {
 	NUMBER_OF_DICE = rangeNumberOfDice.value;
-	// console.log(NUMBER_OF_DICE);
 
     const interval = setInterval(() => {
         randomizeDice(diceContainer, NUMBER_OF_DICE);
@@ -98,9 +50,3 @@ btnRollDice.addEventListener('click', () => {
         clearInterval(interval);
     }, 1000);
 });
-
-// // range indicator
-// document.querySelector('input[type=range]').addEventListener('input', function rangeChange() {
-// 	// trigger the CSS to update
-// 	this.setAttribute('value', this.value);
-// });

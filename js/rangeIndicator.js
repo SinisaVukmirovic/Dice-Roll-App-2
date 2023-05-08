@@ -1,4 +1,3 @@
-// const rangeIndicator = document.querySelector('input[type=range]')
 import { randomizeDice } from "./script.js";
 import { diceContainer, rangeIndicator } from "./DOMelements.js";
 

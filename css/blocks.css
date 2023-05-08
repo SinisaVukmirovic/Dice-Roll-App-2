@@ -47,7 +47,6 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding: 2rem; */
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -56,9 +55,6 @@ input#number-of-dice {
     padding: 0 .3rem;
     position: relative;
     background: var(--theme-clr);
-
-    /* border: solid 2px #82CFD0; */
-    /* border-radius: 8px; */
     height: 4px;
     outline: none;
     -webkit-appearance: none;
@@ -78,13 +74,9 @@ label#label-number-of-dice {
     left: 50%;
     transform: translateX(-50%);
     content: attr(value);
-    /* display: block;
-    text-align: center; */
     font-size: 3.5rem;
     color: var(--theme-clr);
     font-family: var(--text-font);
-    /* width: 2rem;
-    height: 2rem; */
 }
 
 #number-of-dice::-webkit-slider-thumb {
@@ -130,6 +122,7 @@ input#number-of-dice:focus {
 }
 
 footer {
+    margin-top: auto;
     padding: 1rem;
 }
 

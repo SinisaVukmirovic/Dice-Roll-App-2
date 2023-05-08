@@ -22,54 +22,6 @@ body {
     font-family: var(--text-font);
 }
 
-footer {
-    margin-top: auto;
-}
-
-/* .dice {
-    margin: .5rem;
-    background-color: firebrick;
-    width: 5rem;
-    height: 5rem;
-    position: relative;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
-} */
-
-
-
-
-
-/* #number-of-dice {
-    background: gold;
-    border: solid 2px #82CFD0;
-    border-radius: 8px;
-    height: 2px;
-    outline: none;
-    appearance: none;
-    -webkit-appearance: none;
-  } */
-  
-/* #number-of-dice::-webkit-slider-thumb {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    -webkit-appearance: none;
-    cursor: ew-resize;
-    background: crimson;
-  } */
-
-/* .btn-roll-dice {
-    cursor: pointer;
-    margin-top: 2rem;
-    display: block;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    outline: none;
-    border: none;
-    border-radius: 10rem;
-} */
-
 @media (max-width: 700px) {
     html {
         font-size: 12px;
@@ -84,8 +36,4 @@ footer {
     html {
         font-size: 12px;
     }
-
-    /* header h1 {
-        font-size: 4rem;
-    } */
 }
