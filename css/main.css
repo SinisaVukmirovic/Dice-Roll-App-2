@@ -1,5 +1,11 @@
 @import './blocks.css';
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --bg-clr: linear-gradient(90deg, #232323, #0c6147, #0c6147, #232323);
     --theme-clr: #fee96c;
@@ -8,6 +14,7 @@
 }
 
 body {
+    min-height: 100vh;
     background: var(--bg-clr);
     display: grid;
     place-items: center;
@@ -15,7 +22,9 @@ body {
     font-family: var(--text-font);
 }
 
-
+footer {
+    margin-top: auto;
+}
 
 /* .dice {
     margin: .5rem;

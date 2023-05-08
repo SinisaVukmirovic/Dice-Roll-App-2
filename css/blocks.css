@@ -13,7 +13,7 @@ header h1 {
     /* align-items: center; */
     border: 1px solid var(--theme-clr);
     border-radius: 1.5rem;
-    margin: 0 auto 4rem;
+    margin: 0 auto 5rem;
 }
 
 .dice {
@@ -47,12 +47,13 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    /* padding: 2rem; */
     gap: 2rem;
     margin-top: 3rem;
 }
 
-#number-of-dice {
+input#number-of-dice {
+    padding: 0 .3rem;
     position: relative;
     background: var(--theme-clr);
 
@@ -89,6 +90,7 @@ label#label-number-of-dice {
 #number-of-dice::-webkit-slider-thumb {
     width: .75rem;
     height: 1.25rem;
+    border-radius: .3rem;
     /* border-radius: 50%; */
     -webkit-appearance: none;
     appearance: none;
@@ -100,7 +102,7 @@ label#label-number-of-dice {
     cursor: pointer;
     margin-top: 2rem;
     display: block;
-    margin: 1rem auto 0;
+    margin: 0 auto;
     padding: 1rem 2rem;
     outline: none;
     border: none;
@@ -118,7 +120,6 @@ label#label-number-of-dice {
 .btn-roll-dice:focus {
     outline: 2px solid var(--theme-clr);
 }
-
 .btn-roll-dice:active {
     scale: .98;
 }
@@ -126,4 +127,17 @@ label#label-number-of-dice {
 input#number-of-dice:focus {
     outline-offset: 2px;
     outline: 2px solid var(--dice-clr);
+}
+
+footer {
+    padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ddd;
+}
+footer a:hover {
+    color: #fff;
 }
